@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Add a book <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%>: add a book</h1>
+    <form action="/bookadded" method="POST">
+      Name:<input id="search-box" type="text" name="name" value="name">
+      Price:<input id="search-box" type="text" name="price" value="price">
+      <input type="submit" value="Add Book" >
+    </form>
+  </body>
+</html>

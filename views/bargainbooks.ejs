@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%> Bargain Books</title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%> Bargain Books</h1>
+    <h2>Here are the books you can buy for under £20:</h2>
+    <ul>
+        <% for(let i = 0; i < availableBooks.length; i++) { %>
+            <% if(availableBooks[i].price < 20) { %>
+            <li>
+                <p><%= availableBooks[i].name %></p>
+                <p>£<%= availableBooks[i].price %></p>
+              </li>
+              <% }%>
+          <% } %>
+  </body>
+</html>
